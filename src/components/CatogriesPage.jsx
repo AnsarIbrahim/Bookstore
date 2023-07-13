@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const CategoriesPage = () => {
-  return <button>Status</button>;
-};
+const CategoriesPage = () => <button type="button">Status</button>;
 
 export default CategoriesPage;

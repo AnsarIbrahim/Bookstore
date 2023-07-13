@@ -1,22 +1,22 @@
-import React from "react";
-import Book from "./Book";
+import React from 'react';
+import Book from './Book';
 
 const BookList = () => {
   const books = [
     {
       id: 1,
-      title: "First Book",
-      author: "Ansar",
+      title: 'First Book',
+      author: 'Ansar',
     },
     {
       id: 2,
-      title: "Second Book",
-      author: "Ansar",
+      title: 'Second Book',
+      author: 'Ansar',
     },
     {
       id: 3,
-      title: "Third Book",
-      author: "Ansar",
+      title: 'Third Book',
+      author: 'Ansar',
     },
   ];
   return (

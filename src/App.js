@@ -1,8 +1,8 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import CategoriesPage from "./components/CatogriesPage";
-import Navigation from "./components/Navigation";
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import CategoriesPage from './components/CatogriesPage';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
