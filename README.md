@@ -91,10 +91,19 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 <br>
-<code>
+
 git clone https://github.com/AnsarIbrahim/Bookstore.git
-cd Bookstore.git
-</code>
+<br>
+
+cd `Bookstore.git`
+
+
+### Install
+
+Install npm: 
+ ```
+ npm install
+```
 
 ### Usage
 
