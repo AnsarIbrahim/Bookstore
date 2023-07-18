@@ -1,6 +1,6 @@
 import React from 'react';
-import BookList from './BookList';
-import BookForm from './BookForm';
+import BookList from '../Books/BookList';
+import BookForm from '../Books/BookForm';
 
 const HomePage = () => (
   <>
