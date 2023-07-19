@@ -9,7 +9,7 @@ import store from './redux/Store';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-[#f5f5f4]">
       <Provider store={store}>
         <Router>
           <Navigation />
