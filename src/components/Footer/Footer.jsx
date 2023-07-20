@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Footer = ({ handleDarkMode, isDarkMode }) => (
   <>
-    <div className="fixed flex w-full h-10 items-center justify-start bg-white sm:h-10 z-40 bottom-0 dark:bg-gray-800 shadow shadow-slate-100">
+    <div className="fixed flex w-full h-10 items-center justify-start bg-white sm:h-10 z-40 bottom-0  dark:bg-gray-800 shadow shadow-slate-100">
       <div className=" pl-10">
         {isDarkMode ? (
           <button type="button" title="darkmode" onClick={handleDarkMode}>

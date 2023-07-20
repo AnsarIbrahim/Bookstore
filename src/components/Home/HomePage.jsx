@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <>
       <div className={isDarkMode ? 'dark' : 'light'}>
-        <div className="overscroll-y-auto h-[130vh] sm:h-[110vh] lg:h-[110vh] scroll-smooth">
+        <div className="overscroll-y-auto scroll-smooth">
           <Navigation handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
           <BookList />
           <BookForm />

@@ -31,7 +31,7 @@ const BookForm = () => {
 
   return (
     <>
-      <div className="mb-20 sm:mb-4 ">
+      <div className="mb-12 md:mb-12">
         <span className="border-t-2 flex items-center justify-center w-[77vw] m-auto border-slate-300 mt-10" />
         <div className="flex items-center mb-3 lg:items-start mt-5 justify-start flex-col w-[77vw] m-auto">
           <h2 className=" font-semibold text-2xl text-black">ADD NEW BOOK</h2>
