@@ -13,7 +13,10 @@ export const addBook = createAsyncThunk(AddBook, async (elements) => {
     id, title, author, category,
   } = elements;
   await axios.post(BaseUrl, {
-    item_id: id, title, author, category,
+    item_id: id,
+    title,
+    author,
+    category,
   });
   return elements;
 });
@@ -26,7 +29,10 @@ export const removeMyBook = createAsyncThunk(RemoveBook, async (id) => {
 const renderMyBooks = (res) => Object.entries(res.data).map((arr) => {
   const [id, [{ title, author, category }]] = arr;
   return {
-    id, title, author, category,
+    id,
+    title,
+    author,
+    category,
   };
 });
 
@@ -45,9 +51,21 @@ const bookReducerSlice = createSlice({
   },
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchMyBooks.fulfilled, (state, action) => ({ ...state, status: 'success', books: action.payload }));
-    builder.addCase(removeMyBook.fulfilled, (state, action) => ({ ...state, status: 'successful', books: deleteBook(state.books, action) }));
-    builder.addCase(addBook.fulfilled, (state, action) => ({ ...state, status: 'successful', books: [...state.books, action.payload] }));
+    builder.addCase(fetchMyBooks.fulfilled, (state, action) => ({
+      ...state,
+      status: 'success',
+      books: action.payload,
+    }));
+    builder.addCase(removeMyBook.fulfilled, (state, action) => ({
+      ...state,
+      status: 'successful',
+      books: deleteBook(state.books, action),
+    }));
+    builder.addCase(addBook.fulfilled, (state, action) => ({
+      ...state,
+      status: 'successful',
+      books: [...state.books, action.payload],
+    }));
   },
 });
 
