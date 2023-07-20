@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ImUser } from 'react-icons/im';
 import { MdDarkMode } from 'react-icons/md';
+import PropTypes from 'prop-types';
 import './navi.css';
 
-const Navigation = () => (
-  <div className="fixed nav-bar h-20 flex w-full items-center justify-around whitespace-normal bg-white shadow shadow-slate-200 sm:h-24 z-40">
+const Navigation = ({ handleDarkMode, isDarkMode }) => (
+  <div className="fixed nav-bar h-20 flex w-full items-center justify-around whitespace-normal bg-white shadow shadow-slate-200 sm:h-24 z-40 dark:bg-gray-800">
     <nav className=" w-full p-3 sm:w-[60vw]">
       <ul className=" flex flex-col items-center gap-[4vw]  sm:flex-row">
         <h1 className="nav-bar text-4xl font-semibold not-italic text-[#0290ff] antialiased hover:italic hover:subpixel-antialiased mt-8 sm:mt-0 ">
@@ -35,9 +36,26 @@ const Navigation = () => (
       </a>
     </div>
     <div>
-      <MdDarkMode className="sm:block hidden text-slate-600" />
+      {isDarkMode ? (
+        <button type="button" title="darkmode" onClick={handleDarkMode}>
+          <MdDarkMode className="sm:block hidden text-white" />
+        </button>
+      ) : (
+        <button type="button" title="darkmode" onClick={handleDarkMode}>
+          <MdDarkMode className="sm:block hidden text-slate-600" />
+        </button>
+      )}
     </div>
   </div>
 );
+
+Navigation.defaultProps = {
+  handleDarkMode: () => {},
+};
+
+Navigation.propTypes = {
+  handleDarkMode: PropTypes.func,
+  isDarkMode: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 
 export default Navigation;

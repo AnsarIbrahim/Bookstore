@@ -15,3 +15,11 @@
   font-family: Montserrat, sans-serif;
   cursor: pointer;
 }
+
+.dark {
+  background-color: rgb(55, 65, 81);
+}
+
+.dark .active {
+  color: #fff;
+}
