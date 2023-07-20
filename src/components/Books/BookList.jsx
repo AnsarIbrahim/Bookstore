@@ -11,10 +11,10 @@ const BookList = () => {
   }, [dispatch]);
   return (
     <div className="flex items-center justify-center scroll-smooth hover:scroll-auto">
-      <ul className="w-[80%] p-5 h-[70vh] grid gap-5 overflow-y-auto mt-24 sm:mt-28 ">
+      <ul className="w-[90%] sm:w-[70%] md:w-[80%] p-5 h-[70vh] grid gap-5 overflow-y-auto mt-24 md:mt-28 ">
         {books
           && books.map((book) => (
-            <li key={book.id} className="flex justify-center items-center sm:justify-around py-5 flex-col sm:flex-row shadow shadow-slate-400 bg-white hover:shadow-lg hover:translate-y-2">
+            <li key={book.id} className="flex justify-center items-center md:justify-around py-5 flex-col md:flex-row shadow shadow-slate-400 bg-white hover:shadow-lg hover:translate-y-2">
               <Book items={book} />
             </li>
           ))}

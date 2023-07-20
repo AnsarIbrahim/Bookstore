@@ -13,7 +13,7 @@ const Navigation = () => (
         <li>
           <Link
             to="/"
-            className="text-black no-underline hover:text-[#2563eb]  hidden sm:block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            className="text-black no-underline hover:text-[#2563eb]  hidden md:block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
           >
             BOOKS
           </Link>
@@ -21,14 +21,14 @@ const Navigation = () => (
         <li>
           <Link
             to="/categories"
-            className="text-slate-300 no-underline hidden sm:block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            className="text-slate-300 no-underline hidden md:block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
           >
             CATEGORIES
           </Link>
         </li>
       </ul>
     </nav>
-    <div className="user-icon-container" title="Click to see LINKEDIN profile">
+    <div className="user-icon-container mr-3" title="Click to see LINKEDIN profile">
       <a href="https://www.linkedin.com/in/ansar-ibrahim-61447424a/">
         <ImUser className="user-icon animate-bounce" />
       </a>

@@ -6,10 +6,6 @@
   padding: 0.875rem;
 }
 
-.dark .user-icon-container {
-  border: 1px solid #959595;
-}
-
 .user-icon {
   color: #0290ff;
   text-align: center;

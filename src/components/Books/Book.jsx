@@ -43,7 +43,7 @@ const Book = ({ items }) => {
           </li>
         </ul>
       </div>
-      <div className="sm:flex gap-5 p-5  sm:ml-80">
+      <div className="lg:flex gap-5 p-5  ">
         <CircularProgressbar
           className=" w-[4.25rem] hover:animate-spin"
           value={progress}
@@ -71,9 +71,9 @@ const Book = ({ items }) => {
 
         </div>
       </div>
-      <div className="flex"><span className="border-t-2 w-20 mb-3 sm:border-l-2 sm:h-16 sm:w-0" /></div>
+      <div className="flex"><span className="border-t-2 w-20 mb-3 md:border-l-2 md:h-16 md:w-0" /></div>
       <div>
-        <div className="flex flex-col sm:mr-20 items-center sm:items-start">
+        <div className="flex flex-col items-center lg:items-start">
           <span className=" text-slate-400 font-normal font-mono">CURRENT CHAPTER</span>
           <p className=" font-serif font-medium">
             Chapter
