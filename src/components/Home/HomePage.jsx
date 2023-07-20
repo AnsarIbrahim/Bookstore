@@ -4,7 +4,7 @@ import BookForm from '../Books/BookForm';
 
 const HomePage = () => (
   <>
-    <div className="overscroll-y-auto h-[130vh] sm:h-[110vh] lg:h-[110vh]">
+    <div className="overscroll-y-auto h-[130vh] sm:h-[110vh] lg:h-[110vh] scroll-smooth">
       <BookList />
       <BookForm />
     </div>
