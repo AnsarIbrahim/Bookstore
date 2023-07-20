@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ImUser } from 'react-icons/im';
+import { MdDarkMode } from 'react-icons/md';
 import './navi.css';
 
 const Navigation = () => (
@@ -32,6 +33,9 @@ const Navigation = () => (
       <a href="https://www.linkedin.com/in/ansar-ibrahim-61447424a/">
         <ImUser className="user-icon animate-bounce" />
       </a>
+    </div>
+    <div>
+      <MdDarkMode className="sm:block hidden text-slate-600" />
     </div>
   </div>
 );
