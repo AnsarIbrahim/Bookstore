@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import HomePage from './components/Home/HomePage';
 import CategoriesPage from './components/Categories/CategoriesPage';
 import Navigation from './components/Navigation/Navigation';
 import store from './redux/Store';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/categories" element={<CategoriesPage />} />
           </Routes>
+          <Footer />
         </Router>
       </Provider>
     </div>
