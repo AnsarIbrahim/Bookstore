@@ -65,7 +65,7 @@ const BookForm = () => {
               required
               className="w-[50vw] sm:w-[10vw] border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 dark:bg-slate-600"
             />
-            <button className="sm:mt-0 sm:ml-2 sm:w-24 w-[30vw] lg:w-[10vw] rounded-[5px] bg-[#0290ff] hover:text-white hover:bg-blue-700  text-white py-1  mt-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none lg:mt-1" type="submit">Add Book</button>
+            <button className="sm:mt-0 sm:ml-2 sm:w-24 w-[30vw] lg:w-[10vw] rounded-[5px] bg-[#0290ff] hover:text-white hover:bg-blue-700  text-white py-1  mt-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none lg:mt-1 mb-2" type="submit">Add Book</button>
           </form>
         </div>
       </div>
