@@ -31,7 +31,7 @@ const BookForm = () => {
 
   return (
     <>
-      <div className="mb-12 md:mb-12">
+      <div className="mb-10 pb-10 md:mb-10 sm:pb-10 md:pb-10">
         <span className="border-t-2 flex items-center justify-center w-[77vw] m-auto border-slate-300 mt-10" />
         <div className="flex items-center mb-3 lg:items-start mt-5 justify-start flex-col w-[77vw] m-auto">
           <h2 className=" font-semibold text-2xl text-black">ADD NEW BOOK</h2>
@@ -65,7 +65,7 @@ const BookForm = () => {
               required
               className="w-[50vw] sm:w-[10vw] border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 dark:bg-slate-600"
             />
-            <button className="sm:mt-0 sm:ml-2 sm:w-24 w-[30vw] lg:w-[10vw] rounded-[5px] bg-[#0290ff] hover:text-white hover:bg-blue-700  text-white py-1  mt-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none lg:mt-1 mb-2" type="submit">Add Book</button>
+            <button className="sm:mt-0 sm:ml-2 sm:w-24 w-[30vw] lg:w-[10vw] rounded-[5px] bg-[#0290ff] hover:text-white hover:bg-blue-700  text-white py-1  mt-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none lg:mt-1 mb-2 md:mb-0" type="submit">Add Book</button>
           </form>
         </div>
       </div>
