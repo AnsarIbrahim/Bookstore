@@ -4,7 +4,7 @@ import { MdDarkMode } from 'react-icons/md';
 const Footer = () => (
   <>
     <div className="fixed flex w-full h-10 items-center justify-start bg-white shadow sm:h-10 z-40 bottom-0">
-      <div className=" pl-3">
+      <div className=" pl-10">
         <MdDarkMode className="sm:hidden items-center justify-start text-slate-700" />
       </div>
       <div className="w-full flex items-center justify-center">
