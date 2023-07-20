@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const Footer = ({ handleDarkMode, isDarkMode }) => (
   <>
+<<<<<<< HEAD
     <div className="fixed flex w-full h-10 items-center justify-start bg-white sm:h-10 z-40 bottom-0 dark:bg-gray-800 shadow shadow-slate-100">
       <div className=" pl-10">
         {isDarkMode ? (
@@ -15,6 +16,11 @@ const Footer = ({ handleDarkMode, isDarkMode }) => (
             <MdDarkMode className="sm:hidden items-center justify-start text-slate-700" />
           </button>
         )}
+=======
+    <div className="fixed flex w-full h-10 items-center justify-start bg-white shadow sm:h-10 z-40 bottom-0">
+      <div className=" pl-10">
+        <MdDarkMode className="sm:hidden items-center justify-start text-slate-700" />
+>>>>>>> ac68926189dd01cae0c8526d48fc40565ad7e857
       </div>
       <div className="w-full flex items-center justify-center pr-10">
         <span className="text-red-600/75">©</span>
