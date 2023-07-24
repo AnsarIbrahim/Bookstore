@@ -132,7 +132,7 @@ You can deploy this project using: GitHub Pages
 👤 **Ansar Ibrahim**
 
 - [GitHub](https://github.com/AnsarIbrahim)
-- [LinkedIn](https://linkedin.com/in/ansar-ibrahim-61447424a/)
+- [LinkedIn](www.linkedin.com/in/ansar-ibrahim)
 - [Twitter](https://twitter.com/ansaradheeb)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
